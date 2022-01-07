@@ -5,5 +5,14 @@ export const environment = {
   production: true,
   version: env.npm_package_version,
   serverUrl: '/api',
-  envName: 'PROD'
+  envName: 'PROD',
+  settings: {
+    appErrorPrefix: '[Desafio Heroes Error] ',
+    appTitle: 'Desafio Angular Heroes',
+    version: '0.0.0',
+    charactersLimit: 50
+  },
+  apiUrl: 'http://gateway.marvel.com/v1/public/',
+  apiKey: '5ccd95b695b3df3434f525d99e50cb62',
+  key: '?ts=16185334990410&apikey=f819f3621f81dde7edc382743d93d41c&hash=968c51ae154e70c54a0d0dd4fb5f405d',
 };
