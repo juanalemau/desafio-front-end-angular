@@ -43,7 +43,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     // Sheet
     MatBottomSheetModule,
     MatSidenavModule,
-    
+
     BrowserAnimationsModule
   ],
   providers: [],

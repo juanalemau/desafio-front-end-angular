@@ -12,8 +12,8 @@ import { CharactersDetailComponent } from './page/characters-details/characters-
     CharactersDetailComponent
   ],
   imports: [
-    CharactersRoutingModule, 
+    CharactersRoutingModule,
     SharedModule
   ]
 })
-export class CharactersModule {}
+export class CharactersModule { }

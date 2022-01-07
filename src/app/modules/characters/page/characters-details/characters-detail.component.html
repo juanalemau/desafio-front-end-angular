@@ -1,8 +1,10 @@
-<div class="character-detail" >
+<div class="character-detail">
     <div *ngIf="isLoading">
         <h3 class="character-detail__title">{{characterDetail.name}}</h3>
-        <p class="character-detail__description" *ngIf="characterDetail.description !== ''">{{characterDetail.description}}</p> 
-        <p class="character-detail__description" *ngIf="characterDetail.description === ''">Sem descripção pelo momento</p> 
+        <p class="character-detail__description" *ngIf="characterDetail.description !== ''">
+            {{characterDetail.description}}</p>
+        <p class="character-detail__description" *ngIf="characterDetail.description === ''">Sem descripção pelo momento
+        </p>
         <div class="row">
             <div class="col">
                 <div class="character-detail__letter-info">Comics</div>
@@ -36,7 +38,7 @@
             </div>
         </div>
     </div>
-    
+
     <span *ngIf="!isLoading">
         Carregando dados!!! ....
     </span>

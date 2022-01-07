@@ -1,5 +1,4 @@
 export interface Thumbnail {
-    extension: string;
-    path: string;
-  }
-  
+  extension: string;
+  path: string;
+}

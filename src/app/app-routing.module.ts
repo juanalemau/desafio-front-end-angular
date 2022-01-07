@@ -13,7 +13,7 @@ const routes: Routes = [
   {
     path: '',
     component: ContentLayoutComponent,
-    canActivate: [NoAuthGuard], 
+    canActivate: [NoAuthGuard],
     children: [
       {
         path: 'characters',

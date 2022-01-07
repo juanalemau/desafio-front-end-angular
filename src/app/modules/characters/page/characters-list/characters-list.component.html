@@ -17,8 +17,8 @@
                 <div class="frontside">
                     <div class="card">
                         <div>
-                            <img class="card-img-top" *ngIf="character.thumbnail.extension == 'jpg'" src="{{character.thumbnail.path}}/portrait_xlarge.jpg" alt="card image" style="width: 100%;height: 12vw;object-fit: cover;">
-                            <img class="card-img-top" *ngIf="character.thumbnail.extension == 'gif'" src="{{character.thumbnail.path}}/portrait_xlarge.gif" alt="card image" style="width: 100%;height: 12vw;object-fit: cover;">
+                            <img class="card-img-top" *ngIf="character.thumbnail.extension === 'jpg'" src="{{character.thumbnail.path}}/portrait_xlarge.jpg" alt="card image" style="width: 100%;height: 12vw;object-fit: cover;">
+                            <img class="card-img-top" *ngIf="character.thumbnail.extension === 'gif'" src="{{character.thumbnail.path}}/portrait_xlarge.gif" alt="card image" style="width: 100%;height: 12vw;object-fit: cover;">
                         </div>
                         <div class="card-body text-center">
                             <h4 class="card-title">{{character.name}}</h4>
