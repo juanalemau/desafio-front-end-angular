@@ -1,0 +1,8 @@
+<header class="masthead mb-auto text-center">
+  <div class="inner">
+    <h3 class="masthead-brand">Desafio Angular Heróis</h3>
+    <nav class="nav nav-masthead justify-content-center" >
+      <a class="nav-link" *ngFor="let item of navItems" [routerLink]="item.link"  routerLinkActive="active"> {{ item.title }}</a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,47 @@
+@use '~@angular/material' as mat;
+@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import '~@angular/material/theming';
+
+$custom-typography: mat.define-typography-config(
+  $font-family: 'Open-sans, Arial, sans-serif'
+);
+
+@import './styles/styles-variables';
+@import './styles/style-reset';
+@import './styles/styles-reset.scss-theme';
+
+@include mat.core();
+
+@import './themes/black-theme.scss';
+@import './themes/light-theme.scss';
+
+
+@mixin my-project-container-component-theme($theme) {
+  $accent: map-get($theme, accent);
+
+  .active {
+    color: mat.get-color-from-palette($accent, default-contrast);
+    background-color: mat.get-color-from-palette($accent);
+
+    &:hover {
+      color: mat.get-color-from-palette($accent, default-contrast);
+      background-color: mat.get-color-from-palette($accent);
+    }
+  }
+}
+
+@mixin custom-components-theme($theme) {
+  @include my-styles-reset-theme($theme);
+  @include my-project-container-component-theme($theme);
+}
+
+.afs-light-theme {
+  @include mat.all-component-themes($afs-light-theme);
+  @include custom-components-theme($afs-light-theme);
+}
+
+.afs-dark-theme {
+  @include mat.all-component-themes($afs-black-theme);
+  @include custom-components-theme($afs-black-theme);
+}
